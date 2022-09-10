@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="founder.jpg">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Course.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Course offers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Btech</a></li>
+                            <li><a class="dropdown-item" href="#">Mtech</a></li>
+                            <li><a class="dropdown-item" href="#">Bsc</a></li>
+                            <li><a class="dropdown-item" href="#">Msc</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Write your course</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal .....................................................................................-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating my-4" >
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div> 
+
+              <div class="btn btn-primary" >Login</div>
+             
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SignUp Modal........................................................................... -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Create your account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-floating my-4" >
+                <input type="text" class="form-control" id="floatingtext" placeholder="Enter Your Name">
+                <label for="floatingtext">Enter Your Name</label>
+              </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <div class="form-floating my-4">
+                <input type="cpassword" class="form-control" id="cfloatingPassword" Confirm placeholder="Password">
+                <label for="cfloatingPassword">Confirm Password</label>
+              </div>
+
+              <div class="btn btn-primary" my-2>Create account</div>
+             
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .............................................. -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="3.jpg" class="d-block w-100" height="500" alt="...">
+
+                <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-danger">More information</button>
+                    <button class="btn btn-success">Courses Offer's</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="1.jpg" class="d-block w-100" height="500" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-danger">More information</button>
+                    <button class="btn btn-success">Courses Offer's</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" height="500" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-danger">More information</button>
+                    <button class="btn btn-success">Courses Offer's</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- blog -->
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Educational</strong>
+                        <h3 class="mb-0">What's do after 12th</h3>
+                        <div class="mb-1 text-muted">Feb 15</div>
+                        <p class="card-text mb-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                            eveniet eligendi mollitia iusto autem doloribus enim similique, veritatis placeat minima.
+                        </p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="t1.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Courses</strong>
+                        <h3 class="mb-0">Offers couses for free</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas illo,
+                            illum dolor dignissimos laboriosam?</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="t2.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Exclusive</strong>
+                        <h3 class="mb-0">How to grow mind?</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                            molestias quas aut cum, sit enim?</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="t3.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Coupon code</strong>
+                        <h3 class="mb-0">Coupon code for these course</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa neque illum
+                            vel rerum a aliquam.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="t4.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer part of website -->
+    <hr>
+    <div class="container3">
+
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Courses</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Btech</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mtech</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Bsc</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Msc</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">BBA</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Important Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="/about.html" class="nav-link p-0 text-muted">About</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="/contact.html"
+                                    class="nav-link p-0 text-muted">Contact</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Term and condition</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Join Us</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Donate</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Suggestion</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Refund policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>For fastest uploads of our posts</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2022 Company, Inc. All rights reserved | Crafted by <a href="https://www.instagram.com/ekranjan23/" target="_blank" class="text-decoration-none">Ranjan Kumar</a></p>
+                    <ul class="list-unstyled d-flex">
+                        <!-- <li class="ms-3"><a class="link-dark" href="#"><img src="pay.png" class="bi" width="500" height="150" alt=""></a></li> -->
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="i.jpeg" class="bi" width="24"
+                                    height="24" alt=""></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="fa.jpeg" class="bi" width="24"
+                                    height="24" alt=""></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="tw.png" class="bi" width="24"
+                                    height="24" alt=""></a></li>
+
+
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
